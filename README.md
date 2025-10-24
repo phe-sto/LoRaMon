@@ -39,7 +39,6 @@ If you want to install directly from this repository, first install the dependen
 
 ```sh
 sudo apt install python3 python3-pip
-sudo pip3 install pyserial
 ```
 
 And then clone the repository and make LoRaMon executable:
@@ -47,8 +46,8 @@ And then clone the repository and make LoRaMon executable:
 ```sh
 git clone https://github.com/markqvist/LoRaMon.git
 cd LoRaMon
-chmod a+x loramon
-./loramon --help
+pip install .
+loramon --help
 ```
 
 ## Usage Examples
